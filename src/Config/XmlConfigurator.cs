@@ -121,7 +121,7 @@ namespace log4net.Config
 				LogLog.Debug(declaringType, "Application config file location unknown");
 			}
 
-#if NETCF || NETSTANDARD1_3
+#if NETCF || NETSTANDARD1_3 || NETSTANDARD2_0
 			// No config file reading stuff. Just go straight for the file
 			Configure(repository, new FileInfo(SystemInfo.ConfigurationFileLocation));
 #else
@@ -969,7 +969,7 @@ namespace log4net.Config
 			/// Initializes a new instance of the <see cref="ConfigureAndWatchHandler" /> class.
 			/// </para>
 			/// </remarks>
-#if NET_4_0 || MONO_4_0 || NETSTANDARD1_3
+#if NET_4_0 || MONO_4_0 || NETSTANDARD1_3 || NETSTANDARD2_0
             [System.Security.SecuritySafeCritical]
 #endif
             public ConfigureAndWatchHandler(ILoggerRepository repository, FileInfo configFile)
@@ -1049,7 +1049,7 @@ namespace log4net.Config
             /// <summary>
             /// Release the handles held by the watcher and timer.
             /// </summary>
-#if NET_4_0 || MONO_4_0 || NETSTANDARD1_3
+#if NET_4_0 || MONO_4_0 || NETSTANDARD1_3 || NETSTANDARD2_0
             [System.Security.SecuritySafeCritical]
 #endif
             public void Dispose()

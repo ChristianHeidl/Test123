@@ -174,7 +174,7 @@ namespace log4net.Util
 		{
 			get 
 			{
-#if NETCF || NETSTANDARD1_3
+#if NETCF || NETSTANDARD1_3 || NETSTANDARD2_0
 				return SystemInfo.EntryAssemblyLocation+".config";
 #else
 				return System.AppDomain.CurrentDomain.SetupInformation.ConfigurationFile;
