@@ -14,12 +14,6 @@ pipeline {
       }
     }
 
-    stage('Prepare build') {
-      steps {
-        sh "git checkout feature/netstandard-2.0"
-      }
-    }
-
     stage('Build') {
       steps {
         stepMSBuild(project: 'src/log4net.sln')
