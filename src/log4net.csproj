@@ -21,7 +21,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net20;net35;net35-client;net40;net40-client;net45;netstandard1.3;netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <Copyright>Copyright 2004-2017 The Apache Software Foundation.</Copyright>
     <AssemblyTitle>Apache log4net for .NET Core</AssemblyTitle>
     <VersionPrefix>2.0.9</VersionPrefix>
