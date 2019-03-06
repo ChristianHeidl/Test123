@@ -4,7 +4,7 @@ import com.soloplan.*
 
 pipeline {
   agent {
-    level 'net-framework-sdk'
+    label 'net-framework-sdk'
   }
 
   stages {
