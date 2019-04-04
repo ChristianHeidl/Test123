@@ -4,7 +4,7 @@ import com.soloplan.*
 
 pipeline {
   agent {
-    label 'net-framework-sdk'
+    label 'dotnet-framework'
   }
 
   stages {
